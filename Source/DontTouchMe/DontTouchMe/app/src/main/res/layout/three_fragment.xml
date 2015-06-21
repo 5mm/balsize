@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffFB6669">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffFB6669"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/topTitle"
+                android:textColor="#ff3E454D"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_add"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/add"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|left"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@color/event_color_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="과제/스케줄"
+                android:id="@+id/textView3"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|left"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@color/event_color_03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="과제"
+                android:id="@+id/textView4"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|left"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@color/event_color_04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="스케줄"
+                android:id="@+id/textView5"
+                android:paddingLeft="30dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

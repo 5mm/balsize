@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffFB6669">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_del"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/delete"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffFB6669"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/topTitle"
+                android:textColor="#ff3E454D"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_add"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/add"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<GridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/gridView"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:numColumns="6"-->
+        <!--android:choiceMode="singleChoice" />-->
+
+    <com.devroo.donttouchme.Component.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:eventTextColor="@android:color/white"
+        app:textSize="10sp"
+        app:hourHeight="40dp"
+        app:headerColumnPadding="5dp"
+        app:headerColumnTextColor="#8f000000"
+        app:headerRowPadding="10dp"
+        app:columnGap="3dp"
+        app:noOfVisibleDays="7"
+        app:headerRowBackgroundColor="#ffefefef"
+        app:dayBackgroundColor="#05000000"
+        app:todayBackgroundColor="#1848adff"
+        app:headerColumnBackground="#ffffffff"/>
+    <!--
+        <CalendarView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/calendarView"
+            android:showWeekNumber="false" />
+    -->
+</LinearLayout>

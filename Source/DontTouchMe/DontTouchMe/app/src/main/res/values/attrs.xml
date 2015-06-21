@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1"/>
+            <enum name="monday" value="2"/>
+            <enum name="tuesday" value="3"/>
+            <enum name="wednesday" value="4"/>
+            <enum name="thursday" value="5"/>
+            <enum name="friday" value="6"/>
+            <enum name="saturday" value="7"/>
+        </attr>
+        <attr name="hourHeight" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="eventTextSize" format="dimension"/>
+        <attr name="headerColumnPadding" format="dimension"/>
+        <attr name="headerRowPadding" format="dimension"/>
+        <attr name="columnGap" format="dimension"/>
+        <attr name="headerColumnTextColor" format="color"/>
+        <attr name="noOfVisibleDays" format="integer"/>
+        <attr name="headerRowBackgroundColor" format="color"/>
+        <attr name="dayBackgroundColor" format="color"/>
+        <attr name="hourSeparatorColor" format="color"/>
+        <attr name="todayBackgroundColor" format="color"/>
+        <attr name="todayHeaderTextColor" format="color"/>
+        <attr name="hourSeparatorHeight" format="dimension"/>
+        <attr name="eventTextColor" format="color"/>
+        <attr name="eventPadding" format="dimension"/>
+        <attr name="headerColumnBackground" format="color"/>
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1"/>
+            <enum name="length_long" value="2"/>
+        </attr>
+        <attr name="overlappingEventGap" format="dimension"/>
+        <attr name="eventMarginVertical" format="dimension"/>
+        <attr name="xScrollingSpeed" format="float"/>
+    </declare-styleable>
+
+    <!-- Styles -->
+    <attr name="styleCaldroidViewLayout" format="reference"/>
+    <attr name="styleCaldroidLeftArrow" format="reference"/>
+    <attr name="styleCaldroidRightArrow" format="reference"/>
+    <attr name="styleCaldroidMonthName" format="reference"/>
+    <attr name="styleCaldroidNormalCell" format="reference"/>
+    <attr name="styleCaldroidSquareCell" format="reference"/>
+    <attr name="styleCaldroidGridView" format="reference"/>
+    <attr name="styleCaldroidWeekdayView" format="reference"/>
+
+    <!-- Custom states -->
+    <declare-styleable name="DateState">
+        <attr name="state_date_today" format="boolean"/>
+        <attr name="state_date_selected" format="boolean"/>
+        <attr name="state_date_disabled" format="boolean"/>
+        <attr name="state_date_prev_next_month" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Declare stylable attribute for a cell -->
+    <declare-styleable name="Cell" >
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+</resources>

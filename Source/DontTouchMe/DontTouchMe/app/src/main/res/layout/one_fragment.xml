@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffFB6669">
+
+        <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffFB6669"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_left"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/left_arrow"
+                    android:scaleType="center"
+                    android:background="#00000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/topTitle"
+                android:textColor="#ff3E454D"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/right_arrow"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_add"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/add"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffffa9ab" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffdadada" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="총 시간 : "
+            android:layout_weight="3"
+            android:textColor="#ff000000"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:ems="10"
+            android:id="@+id/hour"
+            android:layout_weight="3.5"
+            android:enabled="false"
+            android:editable="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="시"
+            android:layout_weight="4"
+            android:textColor="#ff000000"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:ems="10"
+            android:id="@+id/minute"
+            android:layout_weight="3.5"
+            android:enabled="false"
+            android:editable="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="분"
+            android:layout_weight="4"
+            android:textColor="#ff000000"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="#ffffffff" />
+    </LinearLayout>
+
+</LinearLayout>

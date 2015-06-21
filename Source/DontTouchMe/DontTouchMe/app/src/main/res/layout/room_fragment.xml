@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffFB6669">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/back"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffFB6669"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/topTitle"
+                android:textColor="#ff3E454D"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="#00000000"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageButton
+                    android:id="@+id/bt_save"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/add"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/event_color_04">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="시간 설정"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff000000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="시작시간"
+            android:layout_weight="3"
+            android:textColor="#ff000000"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/sDate"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="종료시간"
+            android:layout_weight="3"
+            android:textColor="#ff000000"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/eDate"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:text="확인"
+            android:layout_weight="1"
+            android:background="@drawable/clickstate"
+            android:textColor="#ff000000" />
+        <!--android:background="@color/caldroid_light_red"-->
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:text="취소"
+            android:layout_weight="1"
+            android:background="@drawable/clickstate"
+            android:textColor="#ff000000" />
+        <!--android:background="@color/caldroid_lighter_gray"-->
+        <!--android:background="@color/caldroid_lighter_gray"-->
+    </LinearLayout>
+
+</LinearLayout>
